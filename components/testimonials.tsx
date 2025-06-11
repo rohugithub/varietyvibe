@@ -124,24 +124,24 @@ export function Testimonials() {
   }
 
   return (
-    <section className="py-12 px-12 md:py-16 bg-white">
-      <div className="container px-4 md:px-6">
-        <div className="text-center mb-12">
+    <section className="py-12 px-12 md:py-16 bg-[#e992bc20]">
+      <div className="container px-4 md:px-6 ">
+        <div className=" flex flex-col items-start justify-center mb-6">
           <h2 className="text-5xl ml-3 text-[#B74D80]  font-light tracking-tight leading-tight">What Our Customers Say</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className=" text-md max-w-3xl ml-4">
             Don't just take our word for it. Here's what our satisfied customers have to say about their shopping
             experience.
           </p>
         </div>
 
-        <div className="relative py-12">
+        <div className="relative py-12 ">
           {/* Navigation Arrows */}
           <div className="flex items-center justify-between mb-6">
             <Button
               variant="outline"
               size="icon"
               onClick={prevSlide}
-              className="h-10 w-10"
+              className="h-10 w-10 bg-[#eb6fabec] hover:bg-[#b74d80af] text-white hover:text-white"
               aria-label="Previous testimonials"
             >
               <ChevronLeft className="h-4 w-4" />
@@ -155,7 +155,7 @@ export function Testimonials() {
               variant="outline"
               size="icon"
               onClick={nextSlide}
-              className="h-10 w-10"
+              className="h-10 w-10 bg-[#eb6fabec] hover:bg-[#b74d80af] text-white hover:text-white"
               aria-label="Next testimonials"
             >
               <ChevronRight className="h-4 w-4" />
@@ -163,7 +163,7 @@ export function Testimonials() {
           </div>
 
           {/* Testimonials Carousel */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden  px-1o py-10">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
@@ -177,10 +177,10 @@ export function Testimonials() {
                     itemsPerView === 1 ? "w-full" : itemsPerView === 2 ? "w-1/2" : "w-1/3"
                   }`}
                 >
-                  <Card className="h-full bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Card className="h-full bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 px-6 py-3">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4 mb-4">
-                        <Avatar className="h-12 w-12">
+                        {/* <Avatar className="h-12 w-12">
                           <AvatarImage src={testimonial.avatar || "/placeholder.svg"} alt={testimonial.name} />
                           <AvatarFallback>
                             {testimonial.name
@@ -188,13 +188,13 @@ export function Testimonials() {
                               .map((n) => n[0])
                               .join("")}
                           </AvatarFallback>
-                        </Avatar>
+                        </Avatar> */}
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-1">
-                            <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                            <Quote className="h-5 w-5 text-gray-300" />
+                            <h4 className="font-medium text-2xl text-[#B74D80]">{testimonial.name}</h4>
+                            <Quote className="h-7 w-7 text-[#B74D80]" />
                           </div>
-                          <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                          <p className="text-sm  text-[#b74d80de] ">{testimonial.role}</p>
                           <div className="flex items-center mt-1">
                             {[...Array(5)].map((_, i) => (
                               <Star
@@ -204,16 +204,16 @@ export function Testimonials() {
                                 }`}
                               />
                             ))}
-                            <span className="text-xs text-muted-foreground ml-2">{testimonial.date}</span>
+                            {/* <span className="text-xs text-muted-foreground ml-2">{testimonial.date}</span> */}
                           </div>
                         </div>
                       </div>
 
-                      <blockquote className="text-gray-700 mb-4 leading-relaxed">"{testimonial.review}"</blockquote>
+                      <blockquote className="text-lg text-gray-800  font-light mb-4">"{testimonial.review}"</blockquote>
 
                       <div className="border-t pt-4">
                         <div className="flex items-center justify-between text-sm">
-                          <span className="font-medium text-gray-900">{testimonial.product}</span>
+                          <span className="font-medium text-gray-600">{testimonial.product}</span>
                           <span className="text-muted-foreground">{testimonial.category}</span>
                         </div>
                       </div>

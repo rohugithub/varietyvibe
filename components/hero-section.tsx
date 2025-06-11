@@ -8,19 +8,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const heroSlides = [
   {
     id: 1,
-    image: "/v1.jpg", // Fixed: Remove "./public" and use just "/"
+    image: "/head1.png", // Fixed: Remove "./public" and use just "/"
     alt: "Machine Zone Electronics Sale",
     link: "/category/machine-zone",
   },
   {
     id: 2,
-    image: "/v2.jpg", // Fixed: Remove "./public" and use just "/"
+    image: "/head2.png", // Fixed: Remove "./public" and use just "/"
     alt: "Fashion Frenzy Collection",
     link: "/category/fashion-frenzy",
   },
   {
     id: 3,
-    image: "/v3.jpg", // Fixed: Remove "./public" and use just "/"
+    image: "/head3.png", // Fixed: Remove "./public" and use just "/"
     alt: "Home Furnishing Paradise",
     link: "/category/home-furnishing",
   },

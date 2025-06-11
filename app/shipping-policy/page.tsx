@@ -47,14 +47,14 @@ export default function ShippingPolicyPage() {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-6 py-8">
+        <div className="max-w-8xl mx-auto">
           {/* Shipping Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Truck className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Truck className="h-6 w-6 bg-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">Free Shipping</h3>
                 <p className="text-sm text-gray-600">On orders over ₹500 within India</p>
@@ -62,8 +62,8 @@ export default function ShippingPolicyPage() {
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-6 w-6 bg-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">Fast Delivery</h3>
                 <p className="text-sm text-gray-600">2-5 business days for most locations</p>
@@ -71,8 +71,8 @@ export default function ShippingPolicyPage() {
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Globe className="h-6 w-6 text-blue-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Globe className="h-6 w-6 bg-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">Global Shipping</h3>
                 <p className="text-sm text-gray-600">We ship to over 100 countries worldwide</p>

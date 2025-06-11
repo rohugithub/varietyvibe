@@ -7,8 +7,8 @@ export function ContactInfo() {
       {/* Visit Us */}
       <div className="bg-white rounded-lg p-6 shadow-sm border">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center">
-            <MapPin className="h-5 w-5 text-teal-600" />
+          <div className="w-8 h-8 bg-[#b74d802f] rounded-full flex items-center justify-center">
+            <MapPin className="h-5 w-5 text-[#b74d80]" />
           </div>
           <h2 className="text-lg font-semibold">Visit Us</h2>
         </div>
@@ -20,10 +20,10 @@ export function ContactInfo() {
         <Link
           href="https://maps.google.com"
           target="_blank"
-          className="text-teal-600 hover:text-teal-700 text-sm font-medium flex items-center"
+          className="text-[#b74d80] hover:text-[#b74d80af] text-sm font-medium flex items-center"
         >
           Get directions
-          <svg
+          <svg 
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -44,21 +44,21 @@ export function ContactInfo() {
       {/* Call Us */}
       <div className="bg-white rounded-lg p-6 shadow-sm border">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center">
-            <Phone className="h-5 w-5 text-teal-600" />
+          <div className="w-8 h-8 bg-[#ff69692d] rounded-full flex items-center justify-center">
+            <Phone className="h-5 w-5 text-[#FF6969]" />
           </div>
           <h2 className="text-lg font-semibold">Call Us</h2>
         </div>
         <div className="space-y-4">
           <div>
             <p className="text-gray-600 text-sm">Customer Service:</p>
-            <a href="tel:+911234567890" className="text-teal-600 font-medium hover:underline">
+            <a href="tel:+911234567890" className="text-black font-bold hover:underline">
               +91 123 456 7890
             </a>
           </div>
           <div>
             <p className="text-gray-600 text-sm">Order Support:</p>
-            <a href="tel:+911234567891" className="text-teal-600 font-medium hover:underline">
+            <a href="tel:+911234567891" className="text-black font-bold hover:underline">
               +91 123 456 7891
             </a>
           </div>
@@ -68,21 +68,21 @@ export function ContactInfo() {
       {/* Email Us */}
       <div className="bg-white rounded-lg p-6 shadow-sm border">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center">
-            <Mail className="h-5 w-5 text-teal-600" />
+          <div className="w-8 h-8 bg-[#4286ca3e] rounded-full flex items-center justify-center">
+            <Mail className="h-5 w-5 text-[#4286ca]" />
           </div>
           <h2 className="text-lg font-semibold">Email Us</h2>
         </div>
         <div className="space-y-4">
           <div>
             <p className="text-gray-600 text-sm">General Inquiries:</p>
-            <a href="mailto:info@yourfashionstore.com" className="text-teal-600 font-medium hover:underline">
+            <a href="mailto:info@yourfashionstore.com" className="text-black font-bold hover:underline">
               info@yourfashionstore.com
             </a>
           </div>
           <div>
             <p className="text-gray-600 text-sm">Customer Support:</p>
-            <a href="mailto:support@yourfashionstore.com" className="text-teal-600 font-medium hover:underline">
+            <a href="mailto:support@yourfashionstore.com" className="text-black font-bold hover:underline">
               support@yourfashionstore.com
             </a>
           </div>
@@ -92,8 +92,8 @@ export function ContactInfo() {
       {/* Business Hours */}
       <div className="bg-white rounded-lg p-6 shadow-sm border">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-teal-50 rounded-full flex items-center justify-center">
-            <Clock className="h-5 w-5 text-teal-600" />
+          <div className="w-8 h-8 bg-[#faca5a23] rounded-full flex items-center justify-center">
+            <Clock className="h-5 w-5 text-[#FACA5A]" />
           </div>
           <h2 className="text-lg font-semibold">Business Hours</h2>
         </div>

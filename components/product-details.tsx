@@ -22,7 +22,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
   // Mock multiple product images
   const productImages = [
     product.image,
-    `/placeholder.svg?height=500&width=500&text=${encodeURIComponent(product.name + " - Angle 2")}`,
+    `${encodeURIComponent(product.name + " - Angle 2")}`,
     `/placeholder.svg?height=500&width=500&text=${encodeURIComponent(product.name + " - Angle 3")}`,
     `/placeholder.svg?height=500&width=500&text=${encodeURIComponent(product.name + " - Angle 4")}`,
   ]
@@ -34,7 +34,7 @@ export function ProductDetails({ product }: ProductDetailsProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 px-6 py-6">
       <div className="space-y-4">
         <div className="aspect-square relative overflow-hidden rounded-lg">
           <ImageMagnifier

@@ -48,14 +48,14 @@ export default function ReturnsRefundsPage() {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-8 py-8">
+        <div className="max-w-8xl mx-auto">
           {/* Policy Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <RefreshCw className="h-6 w-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <RefreshCw className="h-6 w-6 text-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">30-Day Returns</h3>
                 <p className="text-sm text-gray-600">Return most items within 30 days of delivery</p>
@@ -63,8 +63,8 @@ export default function ReturnsRefundsPage() {
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="h-6 w-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-6 w-6 text-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">Quick Refunds</h3>
                 <p className="text-sm text-gray-600">Refunds processed within 5-7 business days</p>
@@ -72,8 +72,8 @@ export default function ReturnsRefundsPage() {
             </Card>
             <Card>
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ShieldCheck className="h-6 w-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-[#b74d803c] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ShieldCheck className="h-6 w-6 text-[#b74d80]" />
                 </div>
                 <h3 className="font-semibold mb-2">Hassle-Free Process</h3>
                 <p className="text-sm text-gray-600">Simple online return initiation process</p>

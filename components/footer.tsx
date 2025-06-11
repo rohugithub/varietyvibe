@@ -28,17 +28,23 @@ export function Footer() {
             </div>
             <div className="flex flex-col items-center">
               <CreditCard className="h-12 w-12 mb-4 text-[#b74d80e0]" />
-              <h3 className="font-medium text-xl text-black">Cash on Delivery</h3>
+              <h3 className="font-medium text-xl text-black">
+                Cash on Delivery
+              </h3>
               <p className="text-black text-sm">Pay when you receive</p>
             </div>
             <div className="flex flex-col items-center">
               <Shield className="h-12 w-12 mb-4 text-[#b74d80e0]" />
-              <h3 className="font-medium text-xl text-black ">Original Products</h3>
+              <h3 className="font-medium text-xl text-black ">
+                Original Products
+              </h3>
               <p className="text-black text-sm">100% authentic items</p>
             </div>
             <div className="flex flex-col items-center">
               <RotateCcw className="h-12 w-12 mb-4 text-[#b74d80e0]" />
-              <h3 className="font-medium text-xl text-black">Easy Replacement</h3>
+              <h3 className="font-medium text-xl text-black">
+                Easy Replacement
+              </h3>
               <p className=" text-sm text-black">30-day return policy</p>
             </div>
           </div>
@@ -60,10 +66,9 @@ export function Footer() {
                 />
               </div>
               <p className="text-white mb-6 leading-relaxed">
-                Ever wanted to buy a product but could not because it was too
-                expensive? Worry not! because ECommerce is here! ECommerce,
-                these days in news, is being called as the best online shopping
-                platform.
+                Variety Vibes – Your One-Stop Shop for Everything You Love! From
+                fashion to home essentials, we’ve got it all. Shop trendy,
+                smart, and effortlessly with Variety Vibes.
               </p>
               {/* <div className="flex space-x-3">
                 <Link
@@ -223,7 +228,7 @@ export function Footer() {
               <span className="font-bold text-xl">FedEx</span>
               <span className="font-bold text-xl">
                 <span className="text-blue-400">BLUE</span>
-                <span className="text-green-400">DART</span>
+                <span className="text-yellow-400">DART</span>
               </span>
               <span className="font-bold text-xl">DELHIVERY</span>
             </div>
@@ -231,7 +236,7 @@ export function Footer() {
 
           {/* Center section - Copyright */}
           <div className="text-sm sm:text-md text-white text-center">
-            © 2025 Parpra Fashions Ltd. All rights reserved.
+            © 2025 VARIETY VIBES Ltd. All rights reserved.
           </div>
 
           {/* Right section - Payment methods */}

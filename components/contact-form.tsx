@@ -144,7 +144,7 @@ export function ContactForm() {
           </label>
         </div>
 
-        <Button type="submit" className="w-full bg-teal-700 hover:bg-teal-800">
+        <Button type="submit" className="w-full bg-[#b74d80] hover:bg-[#b74d80a2] transition-all">
           <Send className="h-4 w-4 mr-2" />
           Send Message
         </Button>

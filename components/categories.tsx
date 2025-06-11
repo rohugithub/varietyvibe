@@ -7,7 +7,7 @@ const categories = [
     name: "Machine Zone",
     href: "/category/machine-zone",
     description: "Electronics & Technology",
-    image: "/placeholder.svg?height=200&width=300&text=Electronics+Category",
+    image: "/category-banner/cat1.png",
     productCount: "2,500+ Products",
     bgGradient: "from-slate-900 to-blue-900",
   },
@@ -15,7 +15,7 @@ const categories = [
     name: "Fashion Frenzy",
     href: "/category/fashion-frenzy",
     description: "Clothing & Accessories",
-    image: "/placeholder.svg?height=200&width=300&text=Fashion+Category",
+    image: "/category-banner/cat2.png",
     productCount: "3,200+ Products",
     bgGradient: "from-rose-900 to-pink-900",
   },
@@ -23,7 +23,7 @@ const categories = [
     name: "Home Furnishing",
     href: "/category/home-furnishing",
     description: "Furniture & Home Decor",
-    image: "/placeholder.svg?height=200&width=300&text=Home+Category",
+    image: "/category-banner/cat3.png",
     productCount: "1,800+ Products",
     bgGradient: "from-emerald-900 to-green-900",
   },
@@ -31,7 +31,7 @@ const categories = [
     name: "BookWorms Paradise",
     href: "/category/bookworms-paradise",
     description: "Books & Literature",
-    image: "/placeholder.svg?height=200&width=300&text=Books+Category",
+    image: "/category-banner/cat4.png",
     productCount: "5,000+ Products",
     bgGradient: "from-amber-900 to-orange-900",
   },
@@ -39,7 +39,7 @@ const categories = [
     name: "Stationary Sanctuary",
     href: "/category/stationary-sanctuary",
     description: "Office & School Supplies",
-    image: "/placeholder.svg?height=200&width=300&text=Stationary+Category",
+    image: "/category-banner/cat5.png",
     productCount: "1,200+ Products",
     bgGradient: "from-purple-900 to-violet-900",
   },
@@ -47,7 +47,7 @@ const categories = [
     name: "GameSphere",
     href: "/category/gamesphere",
     description: "Gaming & Entertainment",
-    image: "/placeholder.svg?height=200&width=300&text=Gaming+Category",
+    image: "/category-banner/cat6.png",
     productCount: "900+ Products",
     bgGradient: "from-red-900 to-rose-900",
   },
@@ -78,7 +78,7 @@ export function Categories() {
                   <div
                     className={`absolute inset-0 bg-gradient-to-t ${category.bgGradient} opacity-60 group-hover:opacity-70 transition-opacity duration-300`}
                   />
-                  <div className="absolute inset-0 bg-black/20" />
+                  <div className="absolute inset-0 " />
 
                   {/* Category Info Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

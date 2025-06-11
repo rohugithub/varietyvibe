@@ -94,7 +94,7 @@ function CategoryProducts({ categoryId, categoryName, description }: CategoryPro
   }
 
   return (
-    <div className="space-y-6 px-10 py-10">
+    <div className="space-y-6 px-10  ">
       {/* Category Header */}
       <div className="flex items-center justify-between">
         <div>
@@ -106,12 +106,12 @@ function CategoryProducts({ categoryId, categoryName, description }: CategoryPro
             variant="outline"
             size="icon"
             onClick={prevSlide}
-            className="h-10 w-10"
+            className="h-10 w-10 bg-[#eb6fabec] hover:bg-[#b74d80af] text-white"
             aria-label="Previous products"
           >
-            <ChevronLeft className="h-4 w-4" />
+            <ChevronLeft className="h-4 w-4 " />
           </Button>
-          <Button variant="outline" size="icon" onClick={nextSlide} className="h-10 w-10" aria-label="Next products">
+          <Button variant="outline" size="icon" onClick={nextSlide} className="h-10 w-10 bg-[#eb6fabec] hover:bg-[#b74d80af] text-white" aria-label="Next products">
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
@@ -148,9 +148,9 @@ function CategoryProducts({ categoryId, categoryName, description }: CategoryPro
       </div>
 
       {/* View All Products Button */}
-      <div className="text-center">
-        <Button variant="outline" size="lg" asChild>
-          <a href={`/category/${categoryId}`}>View All {categoryName} Products</a>
+      <div className="text-center mt-10 ">
+        <Button variant="outline" size="lg" asChild className="bg-[#B74D80] text-md hover:bg-[#b74d80af] text-white hover:text-white" >
+          <a href={`/category/${categoryId}`}>View All Products</a>
         </Button>
       </div>
     </div>
