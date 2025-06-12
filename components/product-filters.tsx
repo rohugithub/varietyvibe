@@ -10,7 +10,7 @@ export function ProductFilters() {
   const [priceRange, setPriceRange] = useState([0, 1000])
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 py-5 px-8">
       <Card>
         <CardHeader>
           <CardTitle>Categories</CardTitle>

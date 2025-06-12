@@ -17,7 +17,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   return (
-    <div className="container py-8">
+    <div className="container py-8 px-8">
       <ProductDetails product={product} />
       <RelatedProducts categoryId={product.categoryId} currentProductId={product.id} />
     </div>

@@ -69,7 +69,7 @@ export function WishlistContent() {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold flex items-center gap-2">
-            <Heart className="h-8 w-8 text-red-500" />
+            {/* <Heart className="h-8 w-8 text-red-500" /> */}
             My Wishlist
           </h1>
           <p className="text-muted-foreground mt-1">

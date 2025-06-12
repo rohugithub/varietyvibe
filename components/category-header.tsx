@@ -372,7 +372,7 @@ export function CategoryHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" bg-[#b74d80f3] sticky top-24 z-30 py-2">
+    <div className=" bg-white shadow-md sticky top-24 z-30 py-2">
       <div className="container px-8 md:px-6 ">
         {/* Desktop Navigation */}
         <div className="hidden lg:block">
@@ -380,7 +380,7 @@ export function CategoryHeader() {
             <NavigationMenuList className="space-x-16">
               {Object.entries(categoryData).map(([categoryId, category]) => (
                 <NavigationMenuItem key={categoryId}>
-                  <NavigationMenuTrigger className="h-12 px-4 text-lg  text-white font-light  bg-[#b74d8000] hover:bg-gray-50">
+                  <NavigationMenuTrigger className="h-12 px-4 text-lg  text-black font-light  bg-[#b74d8000] hover:bg-gray-50">
                     {category.name}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>

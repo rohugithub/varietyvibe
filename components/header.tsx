@@ -17,7 +17,7 @@ import {
 import { useCart } from "@/hooks/use-cart";
 import { SideCart } from "@/components/side-cart";
 import { useWishlist } from "@/hooks/use-wishlist";
-import Logo from "@/public/logo/VarietyVibesLogo.png";
+import Logo from "@/public/logo/VarietyVibesLogo-white.png";
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -37,7 +37,7 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 px-6 h-24 w-full border-b bg-white z-50 ">
+      <header className="sticky top-0 px-6 h-24 w-full border-b bg-[#b74d80] z-50 ">
         <div className="relative flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
@@ -60,7 +60,7 @@ export function Header() {
               <Input
                 type="search"
                 placeholder="Search products..."
-                className="pl-8 pr-8 py-1.5 h-[50px] rounded-full shadow-md text-sm placeholder:text-base placeholder:align-middle"
+                className="pl-8 pr-8 py-1.5 h-[50px] rounded-full shadow-md text-sm placeholder:text-base placeholder:align-middle border border- [#b74d80f3]"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -68,7 +68,7 @@ export function Header() {
           </div>
 
           {/* Right side navigation */}
-          <nav className="flex items-center space-x-2 px-4 py-2 bg-white">
+          <nav className="flex items-center space-x-2 px-4 py-2 ">
             {/* Wishlist Button */}
             <Button
               variant="ghost"
@@ -81,7 +81,7 @@ export function Header() {
                 className="relative flex items-center justify-center"
               >
                 <Heart
-                  className="h-6 w-6 text-black"
+                  className="h-6 w-6 text-white"
                   style={{ height: "1.5rem", width: "1.5rem" }}
                 />
                 {wishlistItemCount > 0 && (
@@ -101,7 +101,7 @@ export function Header() {
               onClick={handleCartClick}
             >
               <ShoppingCart
-                className="h-6 w-6 text-black"
+                className="h-6 w-6 text-white"
                 style={{ height: "1.5rem", width: "1.5rem" }}
               />
               {itemCount > 0 && (
@@ -117,7 +117,7 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="h-12 w-12">
                   <User
-                    className="h-6 w-6 text-black"
+                    className="h-6 w-6 text-white"
                     style={{ height: "1.5rem", width: "1.5rem" }}
                   />
                   <span className="sr-only">User menu</span>

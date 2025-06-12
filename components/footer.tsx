@@ -19,7 +19,7 @@ export function Footer() {
     <footer className="mt-auto">
       {/* Features Banner */}
       <div className="text-black bg-[#F9FAFB] border-t font-light py-10 px-4">
-        <div className="container mx-auto shadow-[0_4px_12px_0_rgba(192,99,143,0.15)] px-5 py-10 rounded-2xl ">
+        <div className="container mx-auto shadow-[0_4px_12px_0_rgba(192,99,143,0.15)] px-5 py-10 rounded-2xl bg-[#e992bc20] ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             <div className="flex flex-col items-center ">
               <Truck className="w-12 h-12 mb-4 font-light text-[#b74d80e0]" />
@@ -58,12 +58,14 @@ export function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-start mb-4  mr-4">
+                <Link href="/">
                 <Image
                   src="/logo/VarietyVibesLogo-white.png"
                   alt="logo"
                   width={400}
                   height={400}
                 />
+                </Link>
               </div>
               <p className="text-white mb-6 leading-relaxed">
                 Variety Vibes – Your One-Stop Shop for Everything You Love! From
@@ -97,7 +99,7 @@ export function Footer() {
               <h3 className="font-semibold text-3xl mb-4 text-white">
                 Our Links
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 text-xl">
                 <li>
                   <Link
                     href="/about"
@@ -144,9 +146,9 @@ export function Footer() {
             {/* Quick Links */}
             <div>
               <h3 className="font-semibold text-3xl mb-4 text-white">
-                Quick Links
+              Customer Policy 
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-3 text-xl">
                 <li>
                   <Link
                     href="/track-order"
@@ -195,7 +197,7 @@ export function Footer() {
               <h3 className="font-semibold text-3xl mb-4 text-white">
                 Support
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-4 text-xl">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-white" />
                   <div>
