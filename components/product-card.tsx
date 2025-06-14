@@ -51,7 +51,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
   return (
     <Card className="group overflow-hidden ">
       {/* Fixed size image container */}
-      <div className="relative w-full h-[380px] overflow-hidden">
+      <div className="relative w-full h-[280px] overflow-hidden bg-amber-200">
         <Link href={`/product/${product.id}`} className="block w-full h-full">
           <Image
             src={product.image || "/placeholder.svg"}
@@ -86,7 +86,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
       {/* Content Section */}
       <CardContent className="p-4">
         <Link href={`/product/${product.id}`}>
-          <h3 className="font-medium line-clamp-2 hover:underline  text-xl ">
+          <h3 className="font-medium line-clamp-2 hover:underline  text-md ">
             {product.name}
           </h3>
         </Link>
@@ -112,7 +112,7 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
 
         {/* Price */}
         <div className="flex items-center mt-2">
-          <span className="text-lg font-medium text-[#d8689e]">₹{product.price}</span>
+          <span className="text-md font-medium text-[#d8689e]">₹{product.price}</span>
           {product.originalPrice && (
             <span className="text-sm  line-through ml-2 text-[#d8689e9a]">
               ${product.originalPrice}

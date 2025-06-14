@@ -380,7 +380,7 @@ export function CategoryHeader() {
             <NavigationMenuList className="space-x-16">
               {Object.entries(categoryData).map(([categoryId, category]) => (
                 <NavigationMenuItem key={categoryId}>
-                  <NavigationMenuTrigger className="h-12 px-4 text-lg  text-black font-light  bg-[#b74d8000] hover:bg-gray-50">
+                  <NavigationMenuTrigger className="h-12 px-2 text-md  text-black font-light  bg-[#b74d8000] hover:bg-gray-50">
                     {category.name}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>

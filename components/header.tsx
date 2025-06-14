@@ -17,7 +17,7 @@ import {
 import { useCart } from "@/hooks/use-cart";
 import { SideCart } from "@/components/side-cart";
 import { useWishlist } from "@/hooks/use-wishlist";
-import Logo from "@/public/logo/VarietyVibesLogo-white.png";
+import Logo from "@/public/logo/VarietyVibesLogo3.png";
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,7 +54,7 @@ export function Header() {
           </div>
 
           {/* Search (centered absolutely) */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-2xl">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input

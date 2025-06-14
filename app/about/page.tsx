@@ -19,9 +19,8 @@ export default function AboutPageClient() {
     <div className=" min-h-screen bg-gradient-to-b from-neutral-50 to-white w-full">
       {/* Hero Section */}
       <div className="relative h-[40vh] md:h-[50vh] overflow-hidden">
-       
-       <div className="absolute inset-0 bg-gradient-to-r from-[#b74d80] via-[#b74d809d] to-transparent z-10">
-          <div className="container mx-auto px-4">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#b74d80] via-[#b74d809d] to-transparent z-10">
+          <div className="container mx-auto px-4 flex flex-col justify-center items-start h-full relative z-20">
             <motion.div
               initial="hidden"
               animate="visible"
@@ -58,7 +57,7 @@ export default function AboutPageClient() {
                   Our Story
                 </div>
                 <h2 className="text-3xl md:text-3xl font-semibold mb-4">
-                 Variety Vibes – Your One-Stop Shop for Everything You Love!
+                  Variety Vibes – Your One-Stop Shop for Everything You Love!
                 </h2>
                 <p className="text-gray-700 mb-4">
                   Founded in 2010, Your Fashion Store began as a small boutique
@@ -79,7 +78,7 @@ export default function AboutPageClient() {
               <div className="order-1 md:order-2">
                 <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl transform md:rotate-2 transition-transform hover:rotate-0 duration-300">
                   <Image
-                    src='/About.jpg'
+                    src="/About.jpg"
                     alt="Our Store"
                     fill
                     className="object-cover"
@@ -155,7 +154,6 @@ export default function AboutPageClient() {
             </div>
           </motion.section>
 
-          
           {/* Call to Action */}
           <motion.section
             initial="hidden"

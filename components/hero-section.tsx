@@ -64,7 +64,7 @@ export function HeroSection() {
                 src={slide.image || "/placeholder.svg"}
                 alt={slide.alt}
                 fill
-                className="object-cover"
+                className="object-fill"
                 priority={index === 0} // Add priority for first image
               />
             </Link>

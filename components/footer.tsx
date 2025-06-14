@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="mt-auto">
       {/* Features Banner */}
-      <div className="text-black bg-[#F9FAFB] border-t font-light py-10 px-4">
+      <div className="text-black bg-[#F9FAFB] border-t font-light py-10 px-8">
         <div className="container mx-auto shadow-[0_4px_12px_0_rgba(192,99,143,0.15)] px-5 py-10 rounded-2xl bg-[#e992bc20] ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             <div className="flex flex-col items-center ">
@@ -52,7 +52,7 @@ export function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className=" py-12 px-12 bg-[#b74d80e0]">
+      <div className=" py-6 px-12 bg-[#b74d80e0]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
@@ -67,7 +67,7 @@ export function Footer() {
                 />
                 </Link>
               </div>
-              <p className="text-white mb-6 leading-relaxed">
+              <p className="text-white mb-6 leading-relaxed text-md">
                 Variety Vibes – Your One-Stop Shop for Everything You Love! From
                 fashion to home essentials, we’ve got it all. Shop trendy,
                 smart, and effortlessly with Variety Vibes.
@@ -99,11 +99,11 @@ export function Footer() {
               <h3 className="font-semibold text-3xl mb-4 text-white">
                 Our Links
               </h3>
-              <ul className="space-y-3 text-xl">
+              <ul className="space-y-3 text-md">
                 <li>
                   <Link
                     href="/about"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white  hover:text-gray-400 transition-colors"
                   >
                     About Us
                   </Link>
@@ -111,7 +111,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Contact Us
                   </Link>
@@ -119,7 +119,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/blog"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Blogs
                   </Link>
@@ -127,7 +127,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/wholesale"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     ECommerce Wholesale
                   </Link>
@@ -135,7 +135,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/sell"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Sell with Us
                   </Link>
@@ -148,11 +148,11 @@ export function Footer() {
               <h3 className="font-semibold text-3xl mb-4 text-white">
               Customer Policy 
               </h3>
-              <ul className="space-y-3 text-xl">
+              <ul className="space-y-3 text-md">
                 <li>
                   <Link
                     href="/track-order"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Track Order
                   </Link>
@@ -160,7 +160,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/shipping-policy"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Shipping Policy
                   </Link>
@@ -168,7 +168,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/faq"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     FAQs
                   </Link>
@@ -176,7 +176,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/privacy-policy"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Privacy Policy
                   </Link>
@@ -184,7 +184,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/returns-refunds"
-                    className="text-white hover:text-primary transition-colors"
+                    className="text-white hover:text-gray-400 transition-colors"
                   >
                     Returns & Refunds
                   </Link>
@@ -197,7 +197,7 @@ export function Footer() {
               <h3 className="font-semibold text-3xl mb-4 text-white">
                 Support
               </h3>
-              <div className="space-y-4 text-xl">
+              <div className="space-y-4 text-md">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-white" />
                   <div>
@@ -223,16 +223,16 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white text-center sm:text-left">
             <div className="flex items-center gap-2">
               <Globe2 className="w-6 h-6" />
-              <span className="text-xl">India</span>
+              <span className="text-lg">India</span>
             </div>
 
             <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
-              <span className="font-bold text-xl">FedEx</span>
-              <span className="font-bold text-xl">
+              <span className="font-bold text-md">FedEx</span>
+              <span className="font-bold text-md">
                 <span className="text-blue-400">BLUE</span>
                 <span className="text-yellow-400">DART</span>
               </span>
-              <span className="font-bold text-xl">DELHIVERY</span>
+              <span className="font-bold text-md">DELHIVERY</span>
             </div>
           </div>
 

@@ -14,7 +14,7 @@ const testimonials = [
     avatar: "/placeholder.svg?height=60&width=60&text=SJ",
     rating: 5,
     review:
-      "Amazing shopping experience! The product quality exceeded my expectations and the delivery was super fast. I've been shopping here for over a year now and never been disappointed.",
+      "Amazing shopping experience! The product quality exceeded my expectations and the delivery was super fast. I've been shopping here for over a year .",
     product: "Wireless Bluetooth Headphones",
     category: "Machine Zone",
     date: "2 weeks ago",
@@ -177,7 +177,7 @@ export function Testimonials() {
                     itemsPerView === 1 ? "w-full" : itemsPerView === 2 ? "w-1/2" : "w-1/3"
                   }`}
                 >
-                  <Card className="h-full bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 px-6 py-3">
+                  <Card className="h-[330px] bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300  py-3">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4 mb-4">
                         {/* <Avatar className="h-12 w-12">
@@ -211,8 +211,8 @@ export function Testimonials() {
 
                       <blockquote className="text-lg text-gray-800  font-light mb-4">"{testimonial.review}"</blockquote>
 
-                      <div className="border-t pt-4">
-                        <div className="flex items-center justify-between text-sm">
+                      <div className="border-t pt-4 ">
+                        <div className="flex items-center justify-between text-xs">
                           <span className="font-medium text-gray-600">{testimonial.product}</span>
                           <span className="text-muted-foreground">{testimonial.category}</span>
                         </div>
