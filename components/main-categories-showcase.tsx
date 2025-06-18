@@ -42,7 +42,7 @@ function CategoryProducts({
 
   useEffect(() => {
     getProductsByCategory(categoryId).then((data) => {
-      setProducts(data.slice(0, 8)); // Get 8 products for carousel
+      setProducts(data.slice(0, 8)); // Max 8 products
       setIsLoading(false);
     });
   }, [categoryId]);
@@ -50,8 +50,7 @@ function CategoryProducts({
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
-    }, 4000); // Auto-advance every 4 seconds
-
+    }, 4000);
     return () => clearInterval(timer);
   }, [currentIndex, products.length]);
 
@@ -77,37 +76,43 @@ function CategoryProducts({
 
   if (isLoading) {
     return (
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <div className="space-y-2">
-            <div className="h-8 bg-muted animate-pulse rounded w-48" />
-            <div className="h-4 bg-muted animate-pulse rounded w-64" />
+      <div className="flex justify-center">
+        <div className="w-full max-w-screen-xl space-y-6 px-4 sm:px-6 lg:px-10">
+          <div className="flex items-center justify-between">
+            <div className="space-y-2">
+              <div className="h-8 bg-muted animate-pulse rounded w-48" />
+              <div className="h-4 bg-muted animate-pulse rounded w-64" />
+            </div>
+            <div className="flex space-x-2">
+              <div className="h-10 w-10 bg-muted animate-pulse rounded" />
+              <div className="h-10 w-10 bg-muted animate-pulse rounded" />
+            </div>
           </div>
-          <div className="flex space-x-2">
-            <div className="h-10 w-10 bg-muted animate-pulse rounded" />
-            <div className="h-10 w-10 bg-muted animate-pulse rounded" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="h-64 bg-muted animate-pulse rounded-lg" />
+            ))}
           </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="h-64 bg-muted animate-pulse rounded-lg" />
-          ))}
         </div>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 w-full">
-      {/* Category Header */}
-      <div className="flex items-center justify-between  w-full  sm:px-6 lg:px-10 xl:px-20">
-        <div>
-          <h2 className="text-3xl  sm:text-5xl text-[#B74D80] font-light tracking-tight leading-tight">
+    <div className="flex justify-center w-full px-4 sm:px-6 lg:px-10">
+      <div className="w-full max-w-screen-xl space-y-10 ">
+        {/* Category Header */}
+        <div className="space-y-3">
+          <h2 className="text-3xl sm:text-5xl text-[#B74D80] font-light tracking-tight leading-tight text-left">
             {categoryName}
           </h2>
-          <p className="text-gray-800 text-md">{description}</p>
+          <p className="text-gray-800 text-md max-w-2xl text-left">
+            {description}
+          </p>
         </div>
-        <div className="flex items-center space-x-2">
+
+        {/* Carousel Controls */}
+        <div className="flex justify-end space-x-6">
           <Button
             variant="outline"
             size="icon"
@@ -127,57 +132,57 @@ function CategoryProducts({
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
-      </div>
 
-      {/* Products Carousel */}
-      <div className="relative overflow-hidden px-2 sm:px-6 lg:px-10 xl:px-20">
-        <div
-          className="flex transition-transform duration-300 ease-in-out"
-          style={{
-            transform: `translateX(-${
-              currentIndex * (100 / itemsPerView.desktop)
-            }%)`,
-          }}
-        >
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex-shrink-0 px-3"
-            >
-              <ProductCard product={product} />
-            </div>
-          ))}
+        {/* Products Carousel */}
+        <div className="relative overflow-hidden">
+          <div
+            className="flex transition-transform duration-300 ease-in-out"
+            style={{
+              transform: `translateX(-${
+                currentIndex * (100 / itemsPerView.desktop)
+              }%)`,
+            }}
+          >
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex-shrink-0 px-3"
+              >
+                <ProductCard product={product} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Mobile/Tablet Navigation Dots */}
-      <div className="flex justify-center space-x-2 lg:hidden">
-        {Array.from({ length: Math.ceil(products.length / 2) }).map(
-          (_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index * 2)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                Math.floor(currentIndex / 2) === index
-                  ? "bg-primary"
-                  : "bg-muted"
-              }`}
-              aria-label={`Go to product group ${index + 1}`}
-            />
-          )
-        )}
-      </div>
+        {/* Dots for Mobile/Tablet */}
+        <div className="flex justify-center space-x-2 lg:hidden">
+          {Array.from({ length: Math.ceil(products.length / 2) }).map(
+            (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index * 2)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  Math.floor(currentIndex / 2) === index
+                    ? "bg-primary"
+                    : "bg-muted"
+                }`}
+                aria-label={`Go to product group ${index + 1}`}
+              />
+            )
+          )}
+        </div>
 
-      {/* View All Products Button */}
-      <div className="text-center mt-10">
-        <Button
-          variant="outline"
-          size="lg"
-          asChild
-          className="bg-[#B74D80] text-sm hover:bg-[#b74d80af] text-white hover:text-white"
-        >
-          <a href={`/category/${categoryId}`}>View All Products</a>
-        </Button>
+        {/* View All Button */}
+        <div className="text-center">
+          <Button
+            variant="outline"
+            size="lg"
+            asChild
+            className="bg-[#B74D80] text-sm hover:bg-[#b74d80af] text-white hover:text-white"
+          >
+            <a href={`/category/${categoryId}`}>View All Products</a>
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -185,9 +190,9 @@ function CategoryProducts({
 
 export function MainCategoriesShowcase() {
   return (
-    <section className="py-5 md:py-16 ">
-      <div className="container px-4 md:px-6">
-        <div className="space-y-16">
+    <section className="py-5 md:py-16">
+      <div className="flex justify-center">
+        <div className="w-full max-w-screen-xl space-y-16">
           {mainCategories.map((category) => (
             <CategoryProducts
               key={category.id}
